@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: portfolio-deployment
+  namespace: haridev
+  labels:
+    app: hari
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: hari
+  template:
+    metadata:
+      labels:
+        app: hari
+    spec:
+      containers:
+      - name: portfolio
+        image: haridev944/hari-dev-app-2
+        ports:
+        - containerPort: 80
