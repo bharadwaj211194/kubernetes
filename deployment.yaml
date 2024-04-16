@@ -1,8 +1,8 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: portfolio-deployment
-  namespace: haridev
+  name: gold-deployment
+  namespace: harigold
   labels:
     app: hari
 spec:
@@ -16,7 +16,7 @@ spec:
         app: hari
     spec:
       containers:
-      - name: portfolio
-        image: haridev944/hari-dev-app-2
+      - name: goldapp
+        image: haridev944/hari-gold-app
         ports:
         - containerPort: 80
