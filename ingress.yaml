@@ -1,8 +1,8 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: hari-dev-ingress
-  namespace: haridev
+  name: hari-gold-ingress
+  namespace: harigold
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
@@ -14,6 +14,6 @@ spec:
         path: /
         backend:
           service:
-            name: hari-dev-app-service
+            name: hari-gold-app-service
             port:
               number: 8080            
