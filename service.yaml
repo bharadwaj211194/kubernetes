@@ -1,7 +1,8 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: hari-dev-app-service
+  name: hari-gold-app-service
+  namespace: harigold
 spec:
   selector:
     app: hari
