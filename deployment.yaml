@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: gold-deployment
-  namespace: harigold
+  name: react-deployment
+  namespace: react-nginx 
   labels:
-    app: hari
+    app: react
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: hari
+      app: react
   template:
     metadata:
       labels:
-        app: hari
+        app: react
     spec:
       containers:
-      - name: goldapp
-        image: haridev944/hari-gold-app
+      - name: react
+        image: reactdemo/react-nginx
         ports:
         - containerPort: 80
