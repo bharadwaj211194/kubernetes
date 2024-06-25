@@ -1,13 +1,12 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: hari-gold-app-service
-  namespace: harigold
+  name: react-service
+  namespace: react-nginx  
 spec:
   selector:
-    app: hari
+    app: react
   ports:
-  - protocol: TCP
-    port: 8080
-    targetPort: 80
-  type: ClusterIP
+    - protocol: TCP
+      port: 80
+      targetPort: 80
