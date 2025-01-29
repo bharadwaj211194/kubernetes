@@ -8,10 +8,10 @@ metadata:
 spec:
   tls:
   - hosts:
-    - www.hari-dev.shop
+    - www.bharadwaj.cloud
     secretName: hari-dev-ssl  
   rules:
-  - host: hari-dev.shop
+  - host: bharadwaj.cloud
     http:
       paths:
       - pathType: Prefix
